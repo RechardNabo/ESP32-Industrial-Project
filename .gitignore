@@ -1,0 +1,32 @@
+# Flutter/Dart
+**/build/
+**/.dart_tool/
+**/.idea/
+**/flutter/ephemeral/
+**/*.g.dart
+**/*.freezed.dart
+**/pubspec.lock
+
+# Android
+**/.gradle/
+**/local.properties
+**/android/.gradle/
+**/android/key.properties
+
+# iOS/macOS
+**/Pods/
+**/*.xcworkspace/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+
+# Windows/Linux runner build outputs
+**/windows/runner/*.exe
+**/linux/flutter/ephemeral/
+
+# Arduino/ESP32 build
+**/firmware/**/build/
+
+# General
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
