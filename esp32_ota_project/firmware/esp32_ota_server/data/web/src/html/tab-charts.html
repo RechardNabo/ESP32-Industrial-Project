@@ -1,0 +1,35 @@
+<!-- tab-charts.html — Charts tab -->
+<div class="tab" id="tab-charts">
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Free Heap Memory
+    </h3>
+    <div class="chart-container">
+      <canvas id="chart-heap" width="600" height="180"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Uptime
+    </h3>
+    <div class="chart-container">
+      <canvas id="chart-uptime" width="600" height="180"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Heartbeat Ticks / Interval
+    </h3>
+    <div class="chart-container">
+      <canvas id="chart-ticks" width="600" height="180"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row"><span class="label">OTA Session</span><span class="value"><span class="badge red" id="charts-ota-status">Locked</span></span></div>
+    <div class="row"><span class="label">Time Remaining</span><span class="value" id="charts-ota-remaining">&mdash;</span></div>
+  </div>
+</div>

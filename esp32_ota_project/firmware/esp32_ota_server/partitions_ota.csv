@@ -1,0 +1,40 @@
+# =============================================================================
+# ESP32 Dual-OTA Partition Table
+# =============================================================================
+#
+# Flash size: 4 MB (4096 KB)
+#
+# Layout:
+#   nvs      :  24 KB  — Non-volatile storage (WiFi config, etc.)
+#   otadata  :   8 KB  — OTA slot selection data
+#   app0     is NOT 1:1 — slot A becomes the first OTA partition
+#   app1     :   8 KB  — OTA slot selection data
+#   app0     :   8 KB  — OTA slot selection data
+#   app0     : 1.8 MB  — OTA partition slot 0
+#   app1     : 1.8 MB  — OTA partition slot 1
+#   spiffs   : remainder — SPIFFS file system
+#
+# HOW TO USE:
+#   1. Copy this file to your Arduino IDE hardware partition directory:
+#      ~/.arduino15/packages/esp32/hardware/esp32/<version>/tools/partitions/
+#      OR place it alongside your sketch and reference it via:
+#      Tools → Partition Scheme → "Custom" (see note below)
+#
+#   2. In Arduino IDE:
+#      - Go to Tools → Partition Scheme
+#      - Select "Custom" or the entry that matches this CSV filename
+#
+#   3. For the board menu to show this option, you may need to add an entry
+#      to boards.txt or use the Arduino IDE 2.x "Custom Partition Scheme"
+#      option under Tools, pointing to this file.
+#
+#   4. After flashing the first sketch, the ESP32 will boot into app0 (OTA_0).
+#      Subsequent OTA updates write to app1 (OTA_1) and swap on reboot.
+#
+# =============================================================================
+# Name,     Type, SubType, Offset,   Size, Flags
+nvs,        data, nvs,     ,        0x6000
+otadata,    data, ota,     ,        0x2000
+app0,       app,  ota_0,   ,        0x1E0000
+app1,       app,  ota_1,   ,        0x1E0000
+spiffs,     data, spiffs,  ,        

@@ -1,0 +1,175 @@
+<!-- tab-dashboard.html — Industrial Dashboard (unified view: gauges + matrix + charts) -->
+<div class="tab active" id="tab-dashboard">
+  <!-- Status Bar: Online indicator + uptime + firmware -->
+  <div class="dash-status-bar">
+    <div class="dash-status-item">
+      <span class="alive-dot" id="dash-alive-dot"></span>
+      <span class="alive-label" id="dash-alive-label">Checking</span>
+    </div>
+    <div class="dash-status-item">
+      <span class="dash-status-label">Uptime</span>
+      <span class="dash-status-value" id="dash-uptime">&mdash;</span>
+    </div>
+    <div class="dash-status-item">
+      <span class="dash-status-label">Firmware</span>
+      <span class="dash-status-value" id="dash-version">&mdash;</span>
+    </div>
+    <div class="dash-status-item">
+      <span class="dash-status-label">OTA</span>
+      <span class="badge red" id="dash-ota-badge">Locked</span>
+    </div>
+  </div>
+
+  <!-- Row 1: Primary Gauges -->
+  <div class="dash-gauge-row">
+    <!-- Heap Gauge -->
+    <div class="card dash-gauge-card">
+      <div class="dash-gauge-header">
+        <svg viewBox="0 0 24 24" width="16" height="16"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="var(--success)" stroke-width="2"/><line x1="9" y1="9" x2="9" y2="15" stroke="var(--success)" stroke-width="2"/><line x1="15" y1="9" x2="15" y2="15" stroke="var(--success)" stroke-width="2"/><line x1="9" y1="12" x2="15" y2="12" stroke="var(--success)" stroke-width="2"/></svg>
+        <span>Memory</span>
+        <span class="dash-gauge-sub" id="dash-heap-sub">&mdash;</span>
+      </div>
+      <div class="dash-circular-wrap">
+        <svg class="dash-circular" viewBox="0 0 120 120">
+          <circle class="dash-circle-bg" cx="60" cy="60" r="52"/>
+          <circle class="dash-circle-fill" id="dash-heap-circle" cx="60" cy="60" r="52" stroke-dasharray="326.73" stroke-dashoffset="326.73"/>
+        </svg>
+        <div class="dash-circular-text">
+          <span class="dash-circular-pct" id="dash-heap-pct">0%</span>
+          <span class="dash-circular-label">Free</span>
+        </div>
+      </div>
+      <div class="dash-gauge-footer" id="dash-heap-detail">Heap: &mdash; / Flash: &mdash;</div>
+    </div>
+
+    <!-- Tick Rate Gauge -->
+    <div class="card dash-gauge-card">
+      <div class="dash-gauge-header">
+        <svg viewBox="0 0 24 24" width="16" height="16"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Tick Rate</span>
+        <span class="dash-gauge-sub" id="dash-tick-sub">&mdash;</span>
+      </div>
+      <div class="dash-circular-wrap">
+        <svg class="dash-circular" viewBox="0 0 120 120">
+          <circle class="dash-circle-bg" cx="60" cy="60" r="52"/>
+          <circle class="dash-circle-fill dash-circle-blue" id="dash-tick-circle" cx="60" cy="60" r="52" stroke-dasharray="326.73" stroke-dashoffset="326.73"/>
+        </svg>
+        <div class="dash-circular-text">
+          <span class="dash-circular-pct" id="dash-tick-pct">0</span>
+          <span class="dash-circular-label">t/s</span>
+        </div>
+      </div>
+      <div class="dash-gauge-footer" id="dash-tick-detail">Ticks: &mdash; | Interval: &mdash;</div>
+    </div>
+
+    <!-- Uptime Gauge -->
+    <div class="card dash-gauge-card">
+      <div class="dash-gauge-header">
+        <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--warning)" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Uptime</span>
+        <span class="dash-gauge-sub" id="dash-uptime-sub">&mdash;</span>
+      </div>
+      <div class="dash-circular-wrap">
+        <svg class="dash-circular" viewBox="0 0 120 120">
+          <circle class="dash-circle-bg" cx="60" cy="60" r="52"/>
+          <circle class="dash-circle-fill dash-circle-orange" id="dash-uptime-circle" cx="60" cy="60" r="52" stroke-dasharray="326.73" stroke-dashoffset="326.73"/>
+        </svg>
+        <div class="dash-circular-text">
+          <span class="dash-circular-pct" id="dash-uptime-val">&mdash;</span>
+          <span class="dash-circular-label">up</span>
+        </div>
+      </div>
+      <div class="dash-gauge-footer" id="dash-uptime-detail">Running: &mdash; | LED: GPIO &mdash;</div>
+    </div>
+  </div>
+
+  <!-- Row 2: Health Matrix Grid -->
+  <div class="dash-matrix-row">
+    <div class="card dash-matrix-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="var(--success)" stroke-width="2"/></svg>
+        Health Matrix
+      </h3>
+      <div class="dash-matrix-grid">
+        <div class="dash-cell" id="dm-memory">
+          <div class="dash-cell-icon">&#x1F4BE;</div>
+          <div class="dash-cell-title">Memory</div>
+          <div class="dash-cell-value" id="dm-heap-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-heap-badge">&mdash;</div>
+        </div>
+        <div class="dash-cell" id="dm-heartbeat">
+          <div class="dash-cell-icon">&#x1F493;</div>
+          <div class="dash-cell-title">Heartbeat</div>
+          <div class="dash-cell-value" id="dm-hb-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-hb-badge">&mdash;</div>
+        </div>
+        <div class="dash-cell" id="dm-ota">
+          <div class="dash-cell-icon">&#x1F512;</div>
+          <div class="dash-cell-title">OTA</div>
+          <div class="dash-cell-value" id="dm-ota-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-ota-badge">&mdash;</div>
+        </div>
+        <div class="dash-cell" id="dm-network">
+          <div class="dash-cell-icon">&#x1F310;</div>
+          <div class="dash-cell-title">Network</div>
+          <div class="dash-cell-value" id="dm-net-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-net-badge">&mdash;</div>
+        </div>
+        <div class="dash-cell" id="dm-firmware">
+          <div class="dash-cell-icon">&#x1F4E6;</div>
+          <div class="dash-cell-title">Firmware</div>
+          <div class="dash-cell-value" id="dm-fw-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-fw-badge">&mdash;</div>
+        </div>
+        <div class="dash-cell" id="dm-chip">
+          <div class="dash-cell-icon">&#x1F4BB;</div>
+          <div class="dash-cell-title">Chip</div>
+          <div class="dash-cell-value" id="dm-chip-val">&mdash;</div>
+          <div class="dash-cell-status badge" id="dm-chip-badge">&mdash;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3: Inline Charts -->
+  <div class="dash-chart-row">
+    <div class="card dash-chart-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Heap Trend <span class="hint" style="margin-left:auto">(last 60 samples)</span>
+      </h3>
+      <div class="chart-container">
+        <canvas id="dash-heap-chart" width="600" height="140"></canvas>
+      </div>
+    </div>
+    <div class="card dash-chart-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Tick Delta <span class="hint" style="margin-left:auto">(each interval)</span>
+      </h3>
+      <div class="chart-container">
+        <canvas id="dash-tick-chart" width="600" height="140"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 4: Detailed Device Info (collapsible) -->
+  <details class="card dash-details">
+    <summary>
+      <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="16" x2="12" y2="12" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="var(--primary)" stroke-width="2"/></svg>
+      Device Details
+    </summary>
+    <div class="dash-detail-grid">
+      <div class="row"><span class="label">Hostname</span><span class="value" id="dash-hostname">&mdash;</span></div>
+      <div class="row"><span class="label">IP Address</span><span class="value" id="dash-ip">&mdash;</span></div>
+      <div class="row"><span class="label">MAC Address</span><span class="value" id="dash-mac">&mdash;</span></div>
+      <div class="row"><span class="label">Chip Model</span><span class="value" id="dash-chip">&mdash;</span></div>
+      <div class="row"><span class="label">Flash Size</span><span class="value" id="dash-flash">&mdash;</span></div>
+      <div class="row"><span class="label">Free Heap</span><span class="value" id="dash-heap-full">&mdash;</span></div>
+      <div class="row"><span class="label">Heartbeat Interval</span><span class="value" id="dash-hb-int">&mdash;</span></div>
+      <div class="row"><span class="label">LED Pin</span><span class="value" id="dash-hb-led">&mdash;</span></div>
+      <div class="row"><span class="label">Tick Count</span><span class="value" id="dash-hb-tick">&mdash;</span></div>
+      <div class="row"><span class="label">OTA Status</span><span class="value" id="dash-ota-status">&mdash;</span></div>
+    </div>
+  </details>
+</div>

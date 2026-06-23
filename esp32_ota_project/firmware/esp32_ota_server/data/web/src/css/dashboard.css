@@ -1,0 +1,264 @@
+/* ==========================================================================
+   dashboard.css — Industrial dashboard: gauges, matrix grid, charts, details
+   ========================================================================== */
+
+/* Status bar across top */
+.dash-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.dash-status-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dash-status-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+.dash-status-value {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Gauge row */
+.dash-gauge-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Gauge card */
+.dash-gauge-card {
+  text-align: center;
+  background: linear-gradient(135deg, var(--surface), var(--surface-2));
+  padding: 20px 16px 16px;
+}
+.dash-gauge-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+.dash-gauge-header svg {
+  flex-shrink: 0;
+}
+.dash-gauge-sub {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 400;
+  font-family: var(--font-mono);
+}
+.dash-gauge-footer {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 12px;
+  font-family: var(--font-mono);
+}
+
+/* Circular SVG gauge */
+.dash-circular-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.dash-circular {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+.dash-circle-bg {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 8;
+}
+.dash-circle-fill {
+  fill: none;
+  stroke: var(--success);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease, stroke 0.3s;
+}
+.dash-circle-blue { stroke: var(--primary); }
+.dash-circle-orange { stroke: var(--warning); }
+.dash-circular-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.dash-circular-pct {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text);
+  line-height: 1;
+}
+.dash-circular-label {
+  display: block;
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Matrix grid */
+.dash-matrix-row {
+  margin-bottom: 16px;
+}
+.dash-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.dash-cell {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.dash-cell:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+.dash-cell-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.dash-cell-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.dash-cell-value {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.dash-cell-status {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Chart row */
+.dash-chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.dash-chart-card {
+  min-width: 0;
+}
+.dash-chart-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Collapsible details */
+.dash-details {
+  margin-bottom: 16px;
+}
+.dash-details summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 0;
+  user-select: none;
+}
+.dash-details summary:hover {
+  color: var(--primary);
+}
+.dash-detail-grid {
+  padding-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .dash-gauge-row {
+    grid-template-columns: 1fr;
+  }
+  .dash-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dash-chart-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .dash-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+  .dash-status-bar {
+    gap: 12px;
+  }
+}
+
+/* ==========================================================================
+   Device Mgr tab grid and metric cards (legacy dashboard styles)
+   ========================================================================== */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.dash-card {
+  background: linear-gradient(135deg, var(--surface), var(--surface-2));
+}
+.dash-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.metric-value {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text);
+  line-height: 1.2;
+}
+.metric-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  font-weight: 500;
+}

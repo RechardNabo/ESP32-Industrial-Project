@@ -1,0 +1,82 @@
+<!-- tab-snmp.html — SNMP Protocol tab -->
+<div class="tab" id="tab-snmp">
+  <!-- Protocol Status -->
+  <div class="card dash-card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="var(--success)" stroke-width="2"/><path d="M9 12l2 2 4-4" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      SNMP Agent Status
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value"><span class="badge green" id="sn-status">Listening</span></span>
+        <span class="metric-label">Status</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-version">&mdash;</span>
+        <span class="metric-label">SNMP Version</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-community">&mdash;</span>
+        <span class="metric-label">Community</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-port">&mdash;</span>
+        <span class="metric-label">UDP Port</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNMP MIB Table -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="3" y1="9" x2="21" y2="9" stroke="var(--primary)" stroke-width="1"/><line x1="9" y1="3" x2="9" y2="21" stroke="var(--primary)" stroke-width="1"/></svg>
+      MIB-II Object Instances &mdash; OIDs 1&ndash;255
+    </h3>
+    <table class="proto-table">
+      <thead>
+        <tr><th>OID</th><th>Instance</th><th>Name</th><th>Value</th><th>Type</th></tr>
+      </thead>
+      <tbody id="sn-mib-table"></tbody>
+    </table>
+  </div>
+
+  <!-- SNMP Traps -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" fill="none" stroke="var(--warning)" stroke-width="2"/><path d="M13.73 21a2 2 0 0 1-3.46 0" fill="none" stroke="var(--warning)" stroke-width="2"/></svg>
+      Trap Destinations
+    </h3>
+    <table class="proto-table">
+      <thead>
+        <tr><th>Destination</th><th>Port</th><th>Version</th><th>Community</th><th>Events</th></tr>
+      </thead>
+      <tbody id="sn-trap-table"></tbody>
+    </table>
+  </div>
+
+  <!-- SNMP Statistics -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Protocol Statistics
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value" id="sn-get-count">&mdash;</span>
+        <span class="metric-label">GET Requests</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-getnext-count">&mdash;</span>
+        <span class="metric-label">GETNEXT Requests</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-set-count">&mdash;</span>
+        <span class="metric-label">SET Requests</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="sn-trap-count">&mdash;</span>
+        <span class="metric-label">Traps Sent</span>
+      </div>
+    </div>
+  </div>
+</div>

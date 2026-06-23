@@ -1,0 +1,5 @@
+# Production web assets — auto-generated from src/ by embed_web_assets.py
+# Re-run: python3 embed_web_assets.py
+/app.js
+/style.css
+/index.html

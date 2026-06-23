@@ -1,0 +1,44 @@
+<!-- tab-config.html — Configuration tab: heartbeat interval + OTA token -->
+<div class="tab" id="tab-config">
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      Heartbeat Configuration
+    </h3>
+    <div class="row"><span class="label">Current Interval</span><span class="value" id="cfg-hb-current">&mdash;</span></div>
+    <div class="row"><span class="label">Tick Count</span><span class="value" id="cfg-hb-tick">&mdash;</span></div>
+    <div class="row"><span class="label">LED Pin</span><span class="value" id="cfg-hb-led">&mdash;</span></div>
+    <div class="row"><span class="label">Status</span><span class="value" id="cfg-hb-running">&mdash;</span></div>
+
+    <div style="margin-top:20px">
+      <div class="hint">Set interval (10 &ndash; 60,000 ms):</div>
+      <div class="input-row">
+        <input type="number" id="cfg-hb-input" placeholder="500" min="10" max="60000" style="flex:1">
+        <button class="btn btn-primary" onclick="setHeartbeat()">Apply</button>
+      </div>
+      <div class="preset-row" id="cfg-hb-presets">
+        <button onclick="setPreset(100)">100 ms</button>
+        <button onclick="setPreset(250)">250 ms</button>
+        <button onclick="setPreset(500)">500 ms</button>
+        <button onclick="setPreset(1000)">1 s</button>
+        <button onclick="setPreset(5000)">5 s</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" fill="none" stroke="var(--warning)" stroke-width="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="var(--warning)" stroke-width="2"/></svg>
+      OTA Unlock
+    </h3>
+    <div class="row"><span class="label">Session Status</span><span class="value"><span class="badge red" id="ota-status-badge">Locked</span></span></div>
+    <div class="row"><span class="label">Time Remaining</span><span class="value" id="ota-remaining">&mdash;</span></div>
+    <div style="margin-top:16px">
+      <div class="input-row">
+        <input type="password" id="cfg-ota-token" placeholder="Enter OTA token">
+        <button class="btn btn-primary" onclick="unlockOta()">Unlock</button>
+      </div>
+      <div class="hint">Unlocks OTA for 120 seconds. Token required for security.</div>
+    </div>
+  </div>
+</div>

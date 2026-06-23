@@ -1,0 +1,82 @@
+<!-- tab-bacnet.html — BACnet MS/TP Protocol tab -->
+<div class="tab" id="tab-bacnet">
+  <!-- Protocol Status -->
+  <div class="card dash-card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="var(--success)" stroke-width="2"/><path d="M12 8v4M12 12h4" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round"/></svg>
+      BACnet MS/TP Gateway
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value"><span class="badge green" id="bn-status">Online</span></span>
+        <span class="metric-label">Status</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-device-id">&mdash;</span>
+        <span class="metric-label">Device ID</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-baud">&mdash;</span>
+        <span class="metric-label">Baud Rate</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-max-master">&mdash;</span>
+        <span class="metric-label">Max Master</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACnet Objects -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="3" y1="9" x2="21" y2="9" stroke="var(--primary)" stroke-width="1"/><line x1="3" y1="15" x2="21" y2="15" stroke="var(--primary)" stroke-width="1"/><line x1="9" y1="3" x2="9" y2="21" stroke="var(--primary)" stroke-width="1"/><line x1="15" y1="3" x2="15" y2="21" stroke="var(--primary)" stroke-width="1"/></svg>
+      BACnet Objects &mdash; Instances 1&ndash;127
+    </h3>
+    <table class="proto-table">
+      <thead>
+        <tr><th>Instance</th><th>Type</th><th>Object Name</th><th>Present Value</th><th>Units</th></tr>
+      </thead>
+      <tbody id="bn-object-table"></tbody>
+    </table>
+  </div>
+
+  <!-- MS/TP Token Stats -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--warning)" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      MS/TP Token Statistics
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value" id="bn-token-pass">&mdash;</span>
+        <span class="metric-label">Token Passes</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-token-recvd">&mdash;</span>
+        <span class="metric-label">Received</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-retries">&mdash;</span>
+        <span class="metric-label">Retries</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="bn-lost">&mdash;</span>
+        <span class="metric-label">Lost Tokens</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COV Subscriptions -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M13.73 21a2 2 0 0 1-3.46 0" fill="none" stroke="var(--primary)" stroke-width="2"/></svg>
+      COV Subscriptions
+    </h3>
+    <table class="proto-table">
+      <thead>
+        <tr><th>Subscriber</th><th>Object</th><th>Property</th><th>Increment</th><th>Confirmed</th></tr>
+      </thead>
+      <tbody id="bn-cov-table"></tbody>
+    </table>
+  </div>
+</div>

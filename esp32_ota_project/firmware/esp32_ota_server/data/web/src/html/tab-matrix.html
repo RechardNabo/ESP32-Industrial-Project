@@ -1,0 +1,52 @@
+<!-- tab-matrix.html — Analysis Matrix tab -->
+<div class="tab" id="tab-matrix">
+  <!-- Device Info -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="16" x2="12" y2="12" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="var(--primary)" stroke-width="2"/></svg>
+      Device Overview
+    </h3>
+    <div class="row"><span class="label">Hostname</span><span class="value" id="matrix-hostname">&mdash;</span></div>
+    <div class="row"><span class="label">Firmware</span><span class="value" id="matrix-version">&mdash;</span></div>
+    <div class="row"><span class="label">Uptime</span><span class="value" id="matrix-uptime">&mdash;</span></div>
+    <div class="row"><span class="label">IP Address</span><span class="value" id="matrix-ip">&mdash;</span></div>
+    <div class="row"><span class="label">MAC Address</span><span class="value" id="matrix-mac">&mdash;</span></div>
+    <div class="row"><span class="label">Chip</span><span class="value" id="matrix-chip">&mdash;</span></div>
+  </div>
+
+  <!-- System Health Matrix -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="var(--success)" stroke-width="2"/></svg>
+      System Health Matrix
+    </h3>
+    <table class="matrix-table">
+      <thead>
+        <tr><th>Parameter</th><th>Value</th><th>Range</th><th>Status</th></tr>
+      </thead>
+      <tbody id="matrix-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Heap Gauge -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Free Heap
+    </h3>
+    <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-dim);margin-bottom:4px">
+      <span id="matrix-heap-val">&mdash;</span>
+      <span id="matrix-heap-pct">0%</span>
+    </div>
+    <div class="gauge-container">
+      <div class="gauge-bar">
+        <div class="gauge-fill" id="matrix-heap-gauge" style="width:0%"></div>
+      </div>
+    </div>
+    <div class="gauge-labels">
+      <span>0%</span>
+      <span>Flash: <span id="matrix-flash-val">&mdash;</span></span>
+      <span>100%</span>
+    </div>
+  </div>
+</div>

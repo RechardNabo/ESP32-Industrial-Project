@@ -1,0 +1,83 @@
+<!-- tab-modbus.html — Modbus RTU/TCP Protocol tab -->
+<div class="tab" id="tab-modbus">
+  <!-- Protocol Status -->
+  <div class="card dash-card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="var(--warning)" stroke-width="2"/><line x1="2" y1="10" x2="22" y2="10" stroke="var(--warning)" stroke-width="1"/><circle cx="6" cy="7" r="1.5" fill="var(--warning)"/><line x1="10" y1="7" x2="18" y2="7" stroke="var(--warning)" stroke-width="1.5"/></svg>
+      Modbus Gateway Status
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value"><span class="badge orange" id="mb-status">Simulating</span></span>
+        <span class="metric-label">Status</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-mode">&mdash;</span>
+        <span class="metric-label">Mode</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-slaves">&mdash;</span>
+        <span class="metric-label">Slave Count</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-pollrate">&mdash;</span>
+        <span class="metric-label">Poll Rate</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slave Devices Table -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="9" cy="7" r="4" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="var(--primary)" stroke-width="2"/></svg>
+      Slave Devices
+    </h3>
+    <table class="proto-table">
+      <thead>
+        <tr><th>Unit ID</th><th>Type</th><th>Registers</th><th>Last Poll</th><th>Response</th></tr>
+      </thead>
+      <tbody id="mb-slave-table"></tbody>
+    </table>
+  </div>
+
+  <!-- Register Map -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Register Map
+    </h3>
+    <div class="hint">Holding Registers (FC03) &mdash; Instance range 1&ndash;127</div>
+    <table class="proto-table">
+      <thead>
+        <tr><th>Address</th><th>Instance</th><th>Data Type</th><th>Value</th><th>Unit</th></tr>
+      </thead>
+      <tbody id="mb-reg-table"></tbody>
+    </table>
+  </div>
+
+  <!-- Communication Stats -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Communication Statistics
+    </h3>
+    <div class="dash-metric-grid">
+      <div class="metric">
+        <span class="metric-value" id="mb-requests">&mdash;</span>
+        <span class="metric-label">Total Requests</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-responses">&mdash;</span>
+        <span class="metric-label">Responses</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-errors">&mdash;</span>
+        <span class="metric-label">Errors</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value" id="mb-timeout">&mdash;</span>
+        <span class="metric-label">Timeouts</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<!-- tab-ota.html — OTA Update tab -->
+<div class="tab" id="tab-ota">
+  <!-- Step 1: Unlock -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--warning)" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="var(--warning)" stroke-width="2"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="var(--warning)" stroke-width="2"/></svg>
+      Step 1: Unlock OTA Session
+    </h3>
+    <div class="hint">Enter the OTA token to enable firmware upload for 120 seconds.</div>
+    <div class="input-row">
+      <input type="password" id="ota-token" placeholder="Enter OTA token">
+      <button class="btn btn-primary" onclick="unlockOta()">Unlock</button>
+    </div>
+    <div class="row"><span class="label">Session Status</span><span class="value"><span class="badge red" id="ota-status-badge">Locked</span></span></div>
+    <div class="row"><span class="label">Time Remaining</span><span class="value" id="ota-remaining">&mdash;</span></div>
+  </div>
+
+  <!-- Step 2: Upload -->
+  <div class="card disabled-card" id="ota-step-upload">
+    <h3>
+      <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="var(--primary)" stroke-width="2"/><polyline points="17 8 12 3 7 8" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="3" x2="12" y2="15" stroke="var(--primary)" stroke-width="2"/></svg>
+      Step 2: Upload Firmware
+    </h3>
+    <div class="hint">Select a <code>.bin</code> file compiled for ESP32 (magic byte 0xE9).</div>
+    <input type="file" id="ota-file" accept=".bin">
+    <div id="ota-file-info" style="display:none;margin-top:8px">
+      <div class="row"><span class="label">File</span><span class="value" id="ota-filename">&mdash;</span></div>
+      <div class="row"><span class="label">Size</span><span class="value" id="ota-filesize">&mdash;</span></div>
+      <div class="row"><span class="label">Magic Byte</span><span class="value" id="ota-magic">&mdash;</span></div>
+    </div>
+    <button class="btn btn-primary btn-block" id="ota-flash-btn" onclick="pushFirmware()" disabled style="margin-top:16px">
+      Flash Firmware
+    </button>
+  </div>
+
+  <!-- Upload progress (hidden by default) -->
+  <div class="card" id="ota-progress-area" style="display:none">
+    <h3>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--primary)" stroke-width="2"/><polyline points="16 12 12 8 8 12" fill="none" stroke="var(--primary)" stroke-width="2"/><line x1="12" y1="16" x2="12" y2="8" stroke="var(--primary)" stroke-width="2"/></svg>
+      Uploading&hellip;
+    </h3>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="ota-progress" style="width:0%">0%</div>
+    </div>
+    <div class="progress-label" id="ota-status-text">Uploading firmware&hellip;</div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+name: esp32_ota_updater
+description: ESP32 Over-The-Air firmware update client for local Wi-Fi networks.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # mDNS device discovery (native only — web uses manual IP fallback)
+  multicast_dns: ^0.3.2
+  # HTTP client for version, status, unlock calls
+  http: ^1.2.0
+
+  # Multipart streaming upload with progress callback
+  dio: ^5.4.0
+
+  # Cross-platform file picker for .bin selection
+  file_picker: ^8.0.0
+
+  # State management (Riverpod)
+  flutter_riverpod: ^2.5.0
+
+  # App version metadata
+  package_info_plus: ^8.0.0
+
+  # Runtime permissions (local network on iOS; not used on web)
+  permission_handler: ^11.3.0
+
+  # Cross-platform path utilities
+  path: ^1.9.0
+
+  # Charts for dashboard
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.woff2
+          weight: 400
+        - asset: fonts/Roboto-Italic.woff2
+          weight: 400
+          style: italic
+        - asset: fonts/Roboto-Bold.woff2
+          weight: 700

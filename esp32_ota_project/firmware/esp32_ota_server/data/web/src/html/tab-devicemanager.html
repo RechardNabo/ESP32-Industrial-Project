@@ -1,0 +1,109 @@
+<!-- tab-devicemanager.html — Device Manager tab (system health & heartbeat) -->
+<div class="tab" id="tab-devicemanager">
+  <div class="dash-grid">
+    <!-- System Health -->
+    <div class="card dash-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="var(--success)" stroke-width="2"/></svg>
+        System Health
+      </h3>
+      <div class="dash-metric-grid">
+        <div class="metric">
+          <span class="metric-value" id="d-uptime">&mdash;</span>
+          <span class="metric-label">Uptime</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-heap">&mdash;</span>
+          <span class="metric-label">Free Heap</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-chip">&mdash;</span>
+          <span class="metric-label">Chip</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-mac">&mdash;</span>
+          <span class="metric-label">MAC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Heartbeat Monitor -->
+    <div class="card dash-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Heartbeat
+      </h3>
+      <div class="dash-metric-grid">
+        <div class="metric">
+          <span class="metric-value" id="d-hb-interval">&mdash;</span>
+          <span class="metric-label">Interval</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-hb-tick">&mdash;</span>
+          <span class="metric-label">Ticks</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-hb-led">&mdash;</span>
+          <span class="metric-label">LED Pin</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-hb-status">&mdash;</span>
+          <span class="metric-label">Status</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTA Status -->
+    <div class="card dash-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" fill="none" stroke="var(--warning)" stroke-width="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="var(--warning)" stroke-width="2"/></svg>
+        OTA Session
+      </h3>
+      <div class="dash-metric-grid">
+        <div class="metric">
+          <span class="metric-value"><span class="badge red" id="d-ota-status">Locked</span></span>
+          <span class="metric-label">Status</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-ota-expires">&mdash;</span>
+          <span class="metric-label">Expires In</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Network -->
+    <div class="card dash-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M1.42 9a16 16 0 0 1 21.16 0" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="12" cy="20" r="1" fill="var(--primary)"/></svg>
+        Network
+      </h3>
+      <div class="dash-metric-grid">
+        <div class="metric">
+          <span class="metric-value" id="d-hostname">&mdash;</span>
+          <span class="metric-label">Hostname</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-ip">&mdash;</span>
+          <span class="metric-label">IP Address</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-version">&mdash;</span>
+          <span class="metric-label">Firmware</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" id="d-flash">&mdash;</span>
+          <span class="metric-label">Flash</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mini Chart: Heap over time -->
+  <div class="card">
+    <h3>
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="var(--primary)" stroke-width="2"/></svg>
+      Memory Trend <span class="hint" style="margin-left:auto">(last 60 samples)</span>
+    </h3>
+    <canvas id="dash-heap-chart" width="600" height="120"></canvas>
+  </div>
+</div>
