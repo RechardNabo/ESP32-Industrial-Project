@@ -10,22 +10,21 @@ static void test_output_enable_sets_w1ts_bank0(void)
 {
     esp_gpio_status_t st = esp_gpio_set_output(2U);
     TEST_ASSERT_EQUAL(ESP_GPIO_STATUS_OK, st);
-    TEST_ASSERT_EQUAL_HEX32(1UL << 2, GPIO_ENABLE_W1TS);
-    /* parent applies pending set on access */
+    /* aliases are write-only on silicon — assert the parent effect */
     TEST_ASSERT_EQUAL_HEX32(1UL << 2, GPIO_ENABLE);
 }
 
 static void test_output_enable_high_bank_uses_reg1(void)
 {
     TEST_ASSERT_EQUAL(ESP_GPIO_STATUS_OK, esp_gpio_set_output(33U));
-    TEST_ASSERT_EQUAL_HEX32(1UL << 1, GPIO_ENABLE1_W1TS);
-    TEST_ASSERT_EQUAL_HEX32(0U, GPIO_ENABLE_W1TS);
+    TEST_ASSERT_EQUAL_HEX32(1UL << 1, GPIO_ENABLE1);
+    TEST_ASSERT_EQUAL_HEX32(0U, GPIO_ENABLE);
 }
 
 static void test_input_only_pin_34_rejected_for_output(void)
 {
     TEST_ASSERT_EQUAL(ESP_GPIO_STATUS_NOT_OUTPUT_CAPABLE, esp_gpio_set_output(34U));
-    TEST_ASSERT_EQUAL_HEX32(0U, GPIO_ENABLE1_W1TS);
+    TEST_ASSERT_EQUAL_HEX32(0U, GPIO_ENABLE1);
 }
 
 static void test_flash_pin_6_rejected(void)
