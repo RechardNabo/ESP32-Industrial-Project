@@ -1,0 +1,32 @@
+# project.yml — Ceedling canonical runner. NOTE: Ceedling vendors its own
+# Unity; the repo vendored copy is for the gcc mirror only and must stay
+# out of Ceedling's include paths.
+:project:
+  :build_root: build_ceedling
+  :use_exceptions: FALSE
+
+:extension:
+  :executable: .exe
+
+:paths:
+  :test:
+    - unit
+  :source:
+    - ../peripherals/gpio
+    - ../peripherals/uart
+    - ../peripherals/spi
+    - ../peripherals/i2c
+    - ../peripherals/ledc
+  :support:
+    - unit/support
+
+:defines:
+  :test:
+    - UNIT_TEST_HOST
+
+:flags:
+  :test:
+    - -std=c99
+
+:gcov:
+  :enabled: FALSE
