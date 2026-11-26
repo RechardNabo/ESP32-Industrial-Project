@@ -24,9 +24,6 @@
   :test:
     - UNIT_TEST_HOST
 
-:flags:
-  :test:
-    - -std=c99
 
 :gcov:
   :enabled: FALSE
