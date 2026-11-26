@@ -1,30 +1,20 @@
-/* main.c — kit module #32 LM35 #32 — standalone firmware, ESP32 classic.
- * Non-blocking super-loop over the device layer. Wiring/verification: README.md.
- * Target build: ESP-IDF. Host-verified logic: drivers/tests/unit/. */
+/* main.c — Lm35 B threshold monitor. Binding only — logic in lm35_b_app.c.
+ * Standalone flashable firmware for this module. Hardware binding lives
+ * here; ALL application logic lives in lm35_b_app.c and is pinned by the
+ * project's 3 host tests (see test_lm35_b_app.c, run: cd projects && make). */
 #include <stdint.h>
-#include <stdbool.h>
-
+#include "lm35_b_app.h"
 #include "../../drivers/devices/kit/kit.h"
-#include "../../drivers/peripherals/gpio/esp_gpio.h"
-#include "../../drivers/peripherals/timer/esp_timer.h"
-
-#define TICK_US  100000UL
-#define LED_PIN  2U   /* typical devkit onboard LED */
 
 int main(void)
 {
-    esp_timer_drv_init();
-    analog_in_t sensor;
-    analog_in_config_t cfg = kit_analog_config(KIT_LM35_B, 2U);
-    esp_adc_init(ESP_ADC_ATTEN_11DB);   /* full-range — see attenuation note */
-    analog_in_init(&sensor, &cfg);
-    int32_t eng = 0;
-
+    lm35_b_app_t app;
+    lm35_b_app_init(&app, 0U);
     for (;;) {
-        const uint64_t tick_start = esp_timer_now_us();
-        if (analog_in_read_scaled(&sensor, &eng) == ANALOG_IN_STATUS_OK) {
-            /* report eng over UART console */
+        if (lm35_b_app_step(&app)) {
+            /* threshold event — hook alarm/LED here on target */
         }
-        while ((esp_timer_now_us() - tick_start) < TICK_US) { }
+        /* 10ms tick on target */
     }
+    return 0;
 }

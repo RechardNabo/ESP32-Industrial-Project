@@ -62,11 +62,11 @@ uint8_t kit_default_pin(kit_module_id_t id)
         case KIT_BUZZER_ACTIVE: return 17U;
         case KIT_LASER:         return 18U;
         case KIT_BUZZER_PASSIVE:return 19U;
-        case KIT_BUTTON:        return 8U;
-        case KIT_TOUCH:         return 9U;
-        case KIT_TILT:          return 10U;
-        case KIT_VIBRATION:     return 11U;
-        case KIT_ROTARY_ENC:    return 6U;    /* CLK; DT on 7 */
+        case KIT_BUTTON:        return 23U;
+        case KIT_TOUCH:         return 21U;
+        case KIT_TILT:          return 34U;   /* input-only pin — ideal for a sensor */
+        case KIT_VIBRATION:     return 35U;   /* input-only pin */
+        case KIT_ROTARY_ENC:    return 4U;    /* CLK; DT on 5 */
         case KIT_LDR:           return 26U;
         case KIT_LM35:          return 27U;
         case KIT_SOUND_ANALOG:  return 28U;

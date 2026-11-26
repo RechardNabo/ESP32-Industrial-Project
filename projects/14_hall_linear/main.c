@@ -1,30 +1,20 @@
-/* main.c — kit module #14 Linear Hall 49E — standalone firmware, ESP32 classic.
- * Non-blocking super-loop over the device layer. Wiring/verification: README.md.
- * Target build: ESP-IDF. Host-verified logic: drivers/tests/unit/. */
+/* main.c — Hall Linear threshold monitor. Binding only — logic in hall_linear_app.c.
+ * Standalone flashable firmware for this module. Hardware binding lives
+ * here; ALL application logic lives in hall_linear_app.c and is pinned by the
+ * project's 3 host tests (see test_hall_linear_app.c, run: cd projects && make). */
 #include <stdint.h>
-#include <stdbool.h>
-
+#include "hall_linear_app.h"
 #include "../../drivers/devices/kit/kit.h"
-#include "../../drivers/peripherals/gpio/esp_gpio.h"
-#include "../../drivers/peripherals/timer/esp_timer.h"
-
-#define TICK_US  100000UL
-#define LED_PIN  2U   /* typical devkit onboard LED */
 
 int main(void)
 {
-    esp_timer_drv_init();
-    analog_in_t sensor;
-    analog_in_config_t cfg = kit_analog_config(KIT_HALL_LINEAR, 0U);
-    esp_adc_init(ESP_ADC_ATTEN_11DB);   /* full-range — see attenuation note */
-    analog_in_init(&sensor, &cfg);
-    int32_t eng = 0;
-
+    hall_linear_app_t app;
+    hall_linear_app_init(&app, 0U);
     for (;;) {
-        const uint64_t tick_start = esp_timer_now_us();
-        if (analog_in_read_scaled(&sensor, &eng) == ANALOG_IN_STATUS_OK) {
-            /* report eng over UART console */
+        if (hall_linear_app_step(&app)) {
+            /* threshold event — hook alarm/LED here on target */
         }
-        while ((esp_timer_now_us() - tick_start) < TICK_US) { }
+        /* 10ms tick on target */
     }
+    return 0;
 }

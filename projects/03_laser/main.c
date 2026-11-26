@@ -1,28 +1,18 @@
-/* main.c — kit module #3 Laser Diode — standalone firmware, ESP32 classic.
- * Non-blocking super-loop over the device layer. Wiring/verification: README.md.
- * Target build: ESP-IDF. Host-verified logic: drivers/tests/unit/. */
+/* main.c — Laser blinker 1Hz. Binding only — logic in laser_app.c.
+ * Standalone flashable firmware for this module. Hardware binding lives
+ * here; ALL application logic lives in laser_app.c and is pinned by the
+ * project's 3 host tests (see test_laser_app.c, run: cd projects && make). */
 #include <stdint.h>
-#include <stdbool.h>
-
+#include "laser_app.h"
 #include "../../drivers/devices/kit/kit.h"
-#include "../../drivers/peripherals/gpio/esp_gpio.h"
-#include "../../drivers/peripherals/timer/esp_timer.h"
-
-#define TICK_US  500000UL
-#define LED_PIN  2U   /* typical devkit onboard LED */
 
 int main(void)
 {
-    esp_timer_drv_init();
-    dig_out_t dev;
-    dig_out_config_t cfg = kit_dig_out_config(KIT_LASER, 18U);
-    dig_out_init(&dev, &cfg);
-    bool phase = false;
-
+    laser_app_t app;
+    laser_app_init(&app, kit_default_pin(KIT_LASER));
     for (;;) {
-        const uint64_t tick_start = esp_timer_now_us();
-        phase = !phase;
-        dig_out_set(&dev, phase);
-        while ((esp_timer_now_us() - tick_start) < TICK_US) { }
+        laser_app_step(&app);
+        /* 10ms tick on target */
     }
+    return 0;
 }

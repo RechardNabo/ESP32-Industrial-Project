@@ -1,35 +1,20 @@
-/* main.c — kit module #28 Tactile Button — standalone firmware, ESP32 classic.
- * Non-blocking super-loop over the device layer. Wiring/verification: README.md.
- * Target build: ESP-IDF. Host-verified logic: drivers/tests/unit/. */
+/* main.c — Button event counter. Binding only — logic in button_app.c.
+ * Standalone flashable firmware for this module. Hardware binding lives
+ * here; ALL application logic lives in button_app.c and is pinned by the
+ * project's 3 host tests (see test_button_app.c, run: cd projects && make). */
 #include <stdint.h>
-#include <stdbool.h>
-
+#include "button_app.h"
 #include "../../drivers/devices/kit/kit.h"
-#include "../../drivers/peripherals/gpio/esp_gpio.h"
-#include "../../drivers/peripherals/timer/esp_timer.h"
-
-#define TICK_US  10000UL
-#define LED_PIN  2U   /* typical devkit onboard LED */
 
 int main(void)
 {
-    esp_timer_drv_init();
-    dig_in_t sensor;
-    dig_in_config_t cfg = kit_dig_in_config(KIT_BUTTON, 21U);
-    dig_in_init(&sensor, &cfg);
-    esp_gpio_set_output(LED_PIN);
-    uint32_t events = 0U;
-    bool was_active = false;
-
+    button_app_t app;
+    button_app_init(&app, kit_default_pin(KIT_BUTTON));
     for (;;) {
-        const uint64_t tick_start = esp_timer_now_us();
-        dig_in_sample(&sensor);
-        const bool active = dig_in_state(&sensor);
-        esp_gpio_write(LED_PIN, active);
-        if (active && !was_active) {{
-            events++;
-        }}
-        was_active = active;
-        while ((esp_timer_now_us() - tick_start) < TICK_US) { }
+        if (button_app_step(&app)) {
+            /* activation edge — hook LED/UART report here on target */
+        }
+        /* 10ms tick on target */
     }
+    return 0;
 }
