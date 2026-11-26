@@ -23,6 +23,7 @@
 :defines:
   :test:
     - UNIT_TEST_HOST
+    - UNIT_TEST_NO_MAIN
 
 
 :gcov:
