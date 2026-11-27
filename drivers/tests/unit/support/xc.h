@@ -59,8 +59,8 @@ extern volatile uint32_t I2C1CTR, I2C1SCLLOW, I2C1SCLHIGH;
 /* LEDC — flat */
 extern volatile uint32_t LEDC_LSTIMER0CONF, LEDC_LSTIMER1CONF;
 extern volatile uint32_t LEDC_HSTIMER0CONF, LEDC_HSTIMER1CONF;
-extern volatile uint32_t LEDC_CH0CONF0[16];
-extern volatile uint32_t LEDC_CH0DUTY[16];
+extern volatile uint32_t LEDC_CH0CONF0[80];
+extern volatile uint32_t LEDC_CH0DUTY[80];
 
 /* ADC legacy controller */
 extern volatile uint32_t SENS_ATTEN1, SENS_START_FORCE;

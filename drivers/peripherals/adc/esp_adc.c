@@ -8,9 +8,9 @@
 #include "esp_adc.h"
 #include "../../bsp/esp_board.h"
 
-#define MEAS1_START      (1UL << 18)
+#define MEAS1_START      ((1UL << 18) | (1UL << 17))   /* start_force + start_sar */
 #define MEAS1_DONE       (1UL << 0)   /* in CTRL2 status */
-#define WIDTH_12BIT      (3UL << 2)   /* SENS_START_FORCE width field */
+#define WIDTH_12BIT      3UL          /* SAR1_BIT_WIDTH bits [1:0] = 12-bit */
 
 static esp_adc_atten_t active_atten;
 

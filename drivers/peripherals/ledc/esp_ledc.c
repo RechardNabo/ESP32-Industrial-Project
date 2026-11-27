@@ -56,7 +56,7 @@ esp_ledc_status_t esp_ledc_channel_init(uint8_t channel, uint8_t timer)
     if (channel >= ESP_LEDC_CHANNEL_COUNT || timer >= 4U)
         return ESP_LEDC_STATUS_INVALID_PARAM;
     /* conf0: bind timer; sig output enable set */
-    LEDC_CH0CONF0[channel] = (uint32_t)timer | CH_CONF_SIG_EN;
+    LEDC_CH0CONF0[channel * 5U] = (uint32_t)timer | CH_CONF_SIG_EN;
     return ESP_LEDC_STATUS_OK;
 }
 
@@ -66,6 +66,6 @@ esp_ledc_status_t esp_ledc_set_duty(uint8_t channel, uint32_t permille)
     if (permille > 1000U) return ESP_LEDC_STATUS_INVALID_PARAM;
     /* duty is resolution-dependent — permille of full scale, fixed point
      * in bits 22:4 (integer part in high bits, 4-bit fractional) */
-    LEDC_CH0DUTY[channel] = (permille << CH_DUTY_SHIFT);
+    LEDC_CH0DUTY[channel * 5U] = (permille << CH_DUTY_SHIFT);
     return ESP_LEDC_STATUS_OK;
 }

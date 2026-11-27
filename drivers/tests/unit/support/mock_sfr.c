@@ -31,8 +31,8 @@ volatile uint32_t I2C1CTR, I2C1SCLLOW, I2C1SCLHIGH;
 
 volatile uint32_t LEDC_LSTIMER0CONF, LEDC_LSTIMER1CONF;
 volatile uint32_t LEDC_HSTIMER0CONF, LEDC_HSTIMER1CONF;
-volatile uint32_t LEDC_CH0CONF0[16];
-volatile uint32_t LEDC_CH0DUTY[16];
+volatile uint32_t LEDC_CH0CONF0[80];
+volatile uint32_t LEDC_CH0DUTY[80];
 
 static volatile uint32_t spi2cmd_store, spi3cmd_store;
 

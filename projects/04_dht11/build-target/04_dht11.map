@@ -1,0 +1,492 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+                              C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o (__divdi3)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .xt.prop       0x00000000       0x24 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .text          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_info    0x00000000       0x65 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_abbrev  0x00000000       0x26 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_aranges
+                0x00000000       0x18 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_line    0x00000000       0x31 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_str     0x00000000       0xce C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .debug_line_str
+                0x00000000       0xb4 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .literal       0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .text          0x00000000       0xad C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_info    0x00000000      0x28a C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_abbrev  0x00000000      0x133 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_loclists
+                0x00000000       0x98 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_line    0x00000000      0x285 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_str     0x00000000      0x25c C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .debug_line_str
+                0x00000000      0x223 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .xt.prop       0x00000000       0xe4 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .literal       0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .text          0x00000000       0x94 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_frame   0x00000000       0x70 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_info    0x00000000      0x311 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_abbrev  0x00000000      0x16b C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_loclists
+                0x00000000       0x8c C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_line    0x00000000      0x1f5 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_str     0x00000000      0x2ac C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .debug_line_str
+                0x00000000      0x236 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .xt.prop       0x00000000       0xc0 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .literal       0x00000000        0xc C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .text          0x00000000       0xa1 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_frame   0x00000000       0x70 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_info    0x00000000      0x34b C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_abbrev  0x00000000      0x1a9 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_loclists
+                0x00000000       0xd4 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_rnglists
+                0x00000000       0x13 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_line    0x00000000      0x24b C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_str     0x00000000      0x250 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .debug_line_str
+                0x00000000      0x22a C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .xt.prop       0x00000000       0xcc C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .literal       0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .text          0x00000000      0x1f2 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_frame   0x00000000       0xd0 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_info    0x00000000      0x721 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_abbrev  0x00000000      0x174 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_loclists
+                0x00000000      0x16e C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_line    0x00000000      0x54b C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_str     0x00000000      0x356 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .debug_line_str
+                0x00000000      0x22a C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .xt.prop       0x00000000      0x1c8 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .literal       0x00000000       0x14 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .text          0x00000000       0xe6 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .rodata        0x00000000       0x10 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_frame   0x00000000       0x88 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_info    0x00000000      0x36a C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_abbrev  0x00000000      0x18e C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_loclists
+                0x00000000       0xb5 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_line    0x00000000      0x359 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_str     0x00000000      0x29a C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .debug_line_str
+                0x00000000      0x231 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .xt.prop       0x00000000      0x108 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .literal       0x00000000       0x88 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .text          0x00000000      0x398 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_frame   0x00000000      0x160 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_info    0x00000000      0xa7d C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_abbrev  0x00000000      0x26f C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_loclists
+                0x00000000      0x3fc C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_rnglists
+                0x00000000       0x13 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_line    0x00000000      0x9b5 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_str     0x00000000      0x3c1 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .debug_line_str
+                0x00000000      0x2a2 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .xt.prop       0x00000000      0x39c C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .literal       0x00000000       0x28 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .text          0x00000000      0x15b C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .rodata        0x00000000      0x334 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .rodata.str1.4
+                0x00000000      0x2be C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_frame   0x00000000       0x88 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_info    0x00000000      0x4d5 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_abbrev  0x00000000      0x11a C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_loclists
+                0x00000000      0x2f7 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_line    0x00000000      0x410 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_str     0x00000000      0x50e C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .debug_line_str
+                0x00000000      0x2db C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .xt.prop       0x00000000      0x30c C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .literal       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .text          0x00000000      0x240 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_frame   0x00000000       0x88 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_info    0x00000000      0x50b C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_abbrev  0x00000000      0x136 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_loclists
+                0x00000000      0x19b C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_rnglists
+                0x00000000       0x29 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_line    0x00000000      0x6bb C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_str     0x00000000      0x1f0 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .debug_line_str
+                0x00000000      0x225 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .xt.prop       0x00000000      0x24c C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .literal       0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .text          0x00000000       0xaf C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .rodata        0x00000000       0x10 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_info    0x00000000      0x20b C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_abbrev  0x00000000      0x122 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_loclists
+                0x00000000       0x96 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_line    0x00000000      0x20c C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_str     0x00000000      0x22f C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .debug_line_str
+                0x00000000      0x1e9 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .xt.prop       0x00000000       0xe4 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .literal       0x00000000       0x10 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .text          0x00000000      0x116 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .rodata        0x00000000       0x10 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_frame   0x00000000       0x70 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_info    0x00000000      0x2ad C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_abbrev  0x00000000      0x11f C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_loclists
+                0x00000000      0x19e C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_line    0x00000000      0x33c C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_str     0x00000000      0x25d C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .debug_line_str
+                0x00000000      0x1ef C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .xt.prop       0x00000000      0x114 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .literal       0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .text          0x00000000       0x7e C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_info    0x00000000      0x13b C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_abbrev  0x00000000       0xd5 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_loclists
+                0x00000000       0x29 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_line    0x00000000      0x18f C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_str     0x00000000      0x133 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .debug_line_str
+                0x00000000      0x1e9 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .xt.prop       0x00000000       0x84 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .text          0x00000000       0x4d C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_info    0x00000000      0x151 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_abbrev  0x00000000       0xec C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_loclists
+                0x00000000       0x1b C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_line    0x00000000      0x172 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_str     0x00000000      0x13c C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .debug_line_str
+                0x00000000      0x1b3 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .xt.prop       0x00000000       0x6c C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .text          0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_frame   0x00000000       0x40 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_info    0x00000000      0x135 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_abbrev  0x00000000       0xea C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_loclists
+                0x00000000       0x4c C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_line    0x00000000      0x142 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_str     0x00000000      0x135 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .debug_line_str
+                0x00000000      0x1c7 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .xt.prop       0x00000000       0x54 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .text          0x00000000       0x4d C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_info    0x00000000      0x18d C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_abbrev  0x00000000      0x102 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_loclists
+                0x00000000       0x44 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_line    0x00000000      0x188 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_str     0x00000000      0x142 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .debug_line_str
+                0x00000000      0x1c7 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .xt.prop       0x00000000       0x84 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .literal       0x00000000        0x4 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .text          0x00000000       0x60 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_frame   0x00000000       0x28 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_info    0x00000000      0x103 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_abbrev  0x00000000       0x9f C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_loclists
+                0x00000000       0x4f C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_line    0x00000000      0x13b C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_str     0x00000000      0x103 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .debug_line_str
+                0x00000000      0x1ba C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .xt.prop       0x00000000       0x60 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .text          0x00000000       0x34 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_frame   0x00000000       0x58 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_info    0x00000000      0x198 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_abbrev  0x00000000       0xef C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_loclists
+                0x00000000       0x3b C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_line    0x00000000      0x130 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_str     0x00000000      0x159 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .debug_line_str
+                0x00000000      0x1c3 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .xt.prop       0x00000000       0x54 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .text          0x00000000       0x56 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_frame   0x00000000       0x40 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_info    0x00000000      0x185 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_abbrev  0x00000000       0xe4 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_loclists
+                0x00000000       0x49 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_line    0x00000000      0x1e6 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_str     0x00000000      0x16b C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .debug_line_str
+                0x00000000      0x1cb C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .comment       0x00000000       0x30 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .xt.prop       0x00000000       0x84 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .data          0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+ .bss           0x00000000        0x0 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+ .xt.lit        0x00000000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+ .xt.prop       0x00000000       0x3c C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+ .text          0x00000000      0x232 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_frame   0x00000000       0x28 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .eh_frame      0x00000000       0x28 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_info    0x00000000      0x69b C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000000      0x1ad C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_loclists
+                0x00000000      0x4f9 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x00000000       0x20 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_rnglists
+                0x00000000       0x50 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_line    0x00000000      0xa2c C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_str     0x00000000      0x1df C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .debug_line_str
+                0x00000000      0x16c C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .comment       0x00000000       0x30 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+ .xt.prop       0x00000000      0x1bc C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+IRAM             0x40080000         0x00020000         x
+DRAM             0x3ffb0000         0x00028000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+LOAD C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+LOAD C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a
+
+.text           0x40080000       0x38
+                0x40080000                        . = ALIGN (0x4)
+ *(.literal*)
+ .literal       0x40080000        0x8 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+                                 0x10 (size before relaxing)
+ *(.text*)
+ .text          0x40080008       0x26 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+                                 0x29 (size before relaxing)
+                0x40080008                _start
+                0x40080008                call_start_cpu0
+ *fill*         0x4008002e        0x2 
+ .text          0x40080030        0x6 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+                0x40080030                main
+ *fill*         0x40080036        0x0 
+                0x40080038                        . = ALIGN (0x4)
+ *fill*         0x40080036        0x2 
+
+.rodata         0x3ffb0000        0x0
+                0x3ffb0000                        . = ALIGN (0x4)
+ *(.rodata*)
+ *(.srodata*)
+                0x3ffb0000                        . = ALIGN (0x4)
+
+.data           0x3ffb0000        0x0
+                0x3ffb0000                        . = ALIGN (0x4)
+ *(.data*)
+ *(.sdata*)
+                0x3ffb0000                        . = ALIGN (0x4)
+
+.bss            0x3ffb0000        0x0
+                0x3ffb0000                        . = ALIGN (0x4)
+                0x3ffb0000                        __bss_start__ = .
+ *(.bss*)
+ *(COMMON)
+                0x3ffb0000                        . = ALIGN (0x4)
+                0x3ffb0000                        __bss_end__ = .
+                0x3ffb0000                        end = .
+                0x3ffb0000                        _end = .
+OUTPUT(build-target/04_dht11.elf elf32-xtensa-le)
+
+.debug_frame    0x00000000       0x50
+ .debug_frame   0x00000000       0x28 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .debug_frame   0x00000028       0x28 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_info     0x00000000      0x1aa
+ .debug_info    0x00000000       0xcb C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .debug_info    0x000000cb       0xdf C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_abbrev   0x00000000      0x123
+ .debug_abbrev  0x00000000       0x7f C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .debug_abbrev  0x0000007f       0xa4 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .debug_aranges
+                0x00000020       0x20 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_line     0x00000000      0x13d
+ .debug_line    0x00000000       0x5b C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .debug_line    0x0000005b       0xe2 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_str      0x00000000      0x116
+ .debug_str     0x00000000      0x116 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+                                0x11a (size before relaxing)
+ .debug_str     0x00000116      0x111 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.debug_line_str
+                0x00000000      0x16e
+ .debug_line_str
+                0x00000000      0x16e C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+                                 0xbd (size before relaxing)
+ .debug_line_str
+                0x0000016e      0x1c9 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.comment        0x00000000       0x2f
+ .comment       0x00000000       0x2f C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+                                 0x30 (size before relaxing)
+ .comment       0x0000002f       0x30 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+
+.xtensa.info    0x00000000       0x38
+ .xtensa.info   0x00000000       0x38 C:\Users\rnabo\AppData\Local\Temp\ccEgYfZW.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\cc5VWF5n.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccu46fMQ.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNd1Omo.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccAE4FW1.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccBoMkZJ.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccWIx6pt.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccT0LUTk.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccwyd9uh.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccrLLEte.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccQRwKug.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\cc3nWsNo.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccbHEHGq.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnM4ULt.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccnFJNVy.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccNFB6IJ.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\cc70lBrW.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccJ3xd9d.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccDJnsUw.o
+ .xtensa.info   0x00000038        0x0 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
+ .xtensa.info   0x00000038        0x0 C:/Users/rnabo/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32\libgcc.a(_divdi3.o)
+
+.debug_loclists
+                0x00000000       0x24
+ .debug_loclists
+                0x00000000       0x24 C:\Users\rnabo\AppData\Local\Temp\ccVdBN1V.o
